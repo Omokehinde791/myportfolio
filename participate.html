@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="lightbox2-2.11.4/lightbox2-2.11.4/dist/css/lightbox.css">
+</head>
+
+<body>
+    <label for="name">name</label>
+    <input type="text">
+    <label for="age">age</label>
+    <input type="text">
+    <label for="email">email</label>
+    <input type="email">
+  </form>
+ 
+  <div>
+    <a href="indexchef.html">close</a>
+ </div>
+
+   
+
+
+<script src="materialize/jquery.js"></script>
+ <script src="materialize/js/materialize.js"></script> 
+ <script>
+    const navbar=document.getElementById('navbar');
+    var sticky = navbar.offsetTop;
+    window.addEventListener('scroll',function() {
+     if(window.scrollY >sticky){  
+     navbar.style.backgroundColor='black';
+    } else {
+        navbar.style.backgroundColor='rgba(0, 0, 0, 0)';
+     }
+
+     });
+ </script>
+<script>
+    $(document).ready(function(){
+    $('.collapsible').collapsible();
+    $('.modal').modal();
+    $('.materialboxed').materialbox();
+    $('.select').formselect();
+    });
+    
+    </script>  
+</body>
+</html>
