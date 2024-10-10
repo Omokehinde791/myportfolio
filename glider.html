@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="Glider.js-master/glider.css">
+</head>
+<body>
+
+
+    <div class="glider-contain">
+        <div class="glider">
+          <div><img src="car blue.jpg" alt=""></div>
+          <div><img src="car blue.jpg" alt=""></div>
+          <div><img src="car blue.jpg" alt=""></div>
+          <div><img src="car blue.jpg" alt=""></div>
+          <div><img src="car blue.jpg" alt=""></div>
+          <div><img src="car blue.jpg" alt=""></div>
+          <div><img src="car blue.jpg" alt=""></div>
+          <div><img src="car blue.jpg" alt=""></div>
+          <div><img src="car blue.jpg" alt=""></div>
+          <div><img src="car blue.jpg" alt=""></div>
+          <div><img src="car blue.jpg" alt=""></div>
+          
+          
+        </div>
+      
+        <button aria-label="Previous" class="glider-prev" style="color: blue;">«<<</button>
+        <button aria-label="Next" class="glider-next" style="color: black;">»</button>
+        <div role="tablist" class="dots"></div>
+      </div>
+
+
+    <script src="materialize/jquery.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+
+
+    <script src="Glider.js-master/glider.js"></script>
+
+    <!-- <script>
+        window.addEventListener('load', function(){
+  new Glider(document.querySelector('.glider'), {
+    setting-name: setting-value
+  })
+})
+    </script>
+
+    <script>
+        new Glider(document.querySelector('.glider'), {
+  slidesToShow: 3,
+  dots: '#dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
+    </script> -->
+
+
+    <script>
+      new Glider(document.querySelector('.glider'), {
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  draggable: true,
+  dots: '.dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
+    </script>
+
+    <script>
+        window.addEventListener('load', function(){
+  new Glider(document.querySelector('.glider'), {
+    setting-name: setting-value
+  })
+})
+    </script>
+
+    <script>
+        var glider = new Glider(document.getElementById('glider'), {
+  slidesToShow: 1,
+  dots: '#dots',
+  
+});
+
+
+glider.setOption({
+  arrows: {
+    prev: '#glider-prev',
+    next: '#glider-next'
+  }
+});
+
+// a refresh may need to be called depending
+// upon the options passed to setOptions
+glider.refresh(true);
+
+// adding or removing items automatically calls refresh()
+glider.removeItem(4);
+
+// death to smoochy!
+glider.destroy();
+    </script>
+</body>
+</html>
